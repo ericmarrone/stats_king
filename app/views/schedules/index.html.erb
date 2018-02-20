@@ -1,0 +1,9 @@
+<h1>Games</h1>
+
+<% @games.each do |game| %>
+  <h2><%= game[:id] %></h2>
+  <h3><%= game[:name] %></h3>
+  <p><%= game[:awayteam]%></p>
+  <p><%= game[:hometeam]%></p>
+
+<% end %>
