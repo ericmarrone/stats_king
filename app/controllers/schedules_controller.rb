@@ -1,6 +1,6 @@
 class SchedulesController < ApplicationController
   def index
-    response = HTTParty.get('https://api.mysportsfeeds.com/v1.2/pull/nhl/current/full_game_schedule.json', headers: { 'Authorization' => "Basic #{ENV['MSF_KEY']}", 'team' => 'tor' })
+    response = HTTParty.get('https://api.mysportsfeeds.com/v1.2/pull/nhl/current/full_game_schedule.json?team=tor', headers: { 'Authorization' => "Basic #{ENV['MSF_KEY']}"})
 
     @schedules = []
     @games = []
