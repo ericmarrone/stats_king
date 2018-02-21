@@ -1,0 +1,7 @@
+<h1>Stats</h1>
+
+<% @nhl_current_stats.each do |player| %>
+  <h2><%= player[:player_firstname]%> <%=player[:player_lastname] %>  </h2>
+  <h3>Team: <%= player[:team]%> </h3>
+  <p>Goals: <%= player[:stats][:goals]%>  </p>
+<% end %>
