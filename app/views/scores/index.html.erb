@@ -2,11 +2,7 @@
 
 <% @scores.each do |game| %>
   <h3><%= game[:date] %></h3>
-  <p><%= game[:awayteam_city]%></p>
-  <p><%= game[:awayteam]%></p>
-  <p><%= game[:away_score]%></p>
-  <p><%= game[:hometeam_city]%></p>
-  <p><%= game[:hometeam]%></p>
-  <p><%= game[:home_score]%></p>
+  <p><%= game[:awayteam_city]%> <%= game[:awayteam]%>: <%= game[:away_score]%></p>
+  <p><%= game[:hometeam_city]%> <%= game[:hometeam]%>: <%= game[:home_score]%></p>
 
 <% end %>
