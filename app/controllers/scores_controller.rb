@@ -1,6 +1,6 @@
 class ScoresController < ApplicationController
   def index
-    date = '20180307'
+    date = '20180224'
     response_nhl = HTTParty.get('https://api.mysportsfeeds.com/v1.2/pull/nhl/current/scoreboard.json?fordate='+ date, headers: { 'Authorization' => "Basic #{ENV['MSF_KEY']}"})
 
     response_nba =
